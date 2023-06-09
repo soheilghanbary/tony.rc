@@ -1,7 +1,8 @@
 import AboutSection from "@/components/about-section";
 import PortfolioSection from "@/components/portfolio-section";
-import { site } from "@/config";
 import Link from "next/link";
+import Title from "@/components/title";
+import Description from "@/components/description";
 
 export default function homePage() {
   return (
@@ -15,12 +16,8 @@ export default function homePage() {
           >
             Follow along on Twitter
           </a>
-          <h1 className="font-bold leading-[1.2] text-3xl sm:text-5xl md:text-6xl lg:text-7xl home-title">
-            {site.title} <br /> {site.subtitle}
-          </h1>
-          <p className="max-w-[42rem] leading-normal text-muted-foreground sm:text-xl sm:leading-8">
-            {site.description}
-          </p>
+          <Title />
+          <Description />
           <div className="space-x-4">
             <Link
               className="inline-flex items-center justify-center text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-50 disabled:pointer-events-none ring-offset-background bg-primary text-primary-foreground hover:bg-primary/90 h-11 px-8 rounded-md"
