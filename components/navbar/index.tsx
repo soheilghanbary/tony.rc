@@ -33,10 +33,10 @@ const NavList: FC = () => {
 
 const NavLogo: FC = () => {
   return (
-    <div className="items-center hidden sm:flex">
+    <Link href={'/'} className="items-center hidden sm:flex">
       <AirVent className="w-5 h-5 mr-3" />
       <h3 className="font-bold">Tony.RC</h3>
-    </div>
+    </Link>
   );
 };
 
