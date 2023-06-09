@@ -17,7 +17,7 @@ export default function BlurImage({ src, alt }: BlurImageProps) {
         src={src}
         loading="lazy"
         className={`object-cover rounded-full duration-500 ease-in-out ${
-          isLoading ? "blur-md grayscale" : "blur-0 grayscale-0"
+          isLoading ? "blur-sm grayscale" : "blur-0 grayscale-0"
         }`}
         onLoadingComplete={() => setLoading(false)}
       />
